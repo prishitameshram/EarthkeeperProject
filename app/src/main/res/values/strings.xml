@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Earthkeepers</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+
+        //Headings
+    <string name="heading_one">Clean Up India</string>
+    <string name="heading_two">Beach Clean up</string>
+    <string name="heading_three">Auto Care Expo 2023</string>
+    <string name="heading_fourth">Clean With Us</string>
+    <string name="heading_fifth">Clean Rails</string>
+    <string name="heading_sixth">Clean Roads</string>
+    <string name="heading_seventh">Clean Mumbai Roads</string>
+    <string name="heading_eighth">Clean Grounds</string>
+
+        //Description
+    <string name="desc_one">Everyone is welcomed. Help clean up the space by picking up litter with us at Juhu Chowpatty(Sun, Apr 23, 7:30 – 10:30 AM)</string>
+    <string name="desc_two">Everyone is welcomed. Help clean up the space by picking up litter with us at Girgaon Chowpatty(Sun, Apr 23, 7:30 – 10:30 AM)</string>
+    <string name="desc_three">India’s only exhibition and trade fair showcasing complete cleaning solutions for automobiles! at Nesco pvt ld.(Tue, Sep 12, 9:30 PM – Fri, Sep 15)</string>
+    <string name="desc_fourth">Everyone is welcomed. Help clean up the space by picking up litter with us at Aksa Chowpatty(Sat, Apr 29, 7:30 – 10:30 AM)</string>
+    <string name="desc_fifth">Everyone is welcomed. Help clean up the space by picking up litter with us at Virar Railways(Sun, Apr 30, 7:30 – 10:30 AM)</string>
+    <string name="desc_sixth">Everyone is welcomed. Help clean up the space by picking up litter with us at Mira Road(Sun, May 07, 7:30 – 10:30 AM)</string>
+    <string name="desc_seventh">Everyone is welcomed. Help clean up the space by picking up litter with us at Juhu (Sun, May 14, 7:30 – 10:30 AM)</string>
+    <string name="desc_eighth">Everyone is welcomed. Help clean up the space by picking up litter with us at Churchgate(Sun, May 21 7:30 – 10:30 AM)</string>
+</resources>

@@ -1,0 +1,98 @@
+package com.example.myproject;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.PagerAdapter;
+
+public class ViewPagerAdapter extends PagerAdapter {
+
+    Context context;
+
+    int images[] = {
+
+            R.drawable.img1,
+            R.drawable.img2,
+            R.drawable.img3,
+            R.drawable.img4,
+            R.drawable.img5,
+            R.drawable.img6,
+            R.drawable.img7,
+            R.drawable.img8
+
+    };
+
+    int headings[] = {
+
+            R.string.heading_one,
+            R.string.heading_two,
+            R.string.heading_three,
+            R.string.heading_fourth,
+            R.string.heading_fifth,
+            R.string.heading_sixth,
+            R.string.heading_seventh,
+            R.string.heading_eighth
+    };
+
+    int description[] = {
+
+            R.string.desc_one,
+            R.string.desc_two,
+            R.string.desc_three,
+            R.string.desc_fourth,
+            R.string.desc_fifth,
+            R.string.desc_sixth,
+            R.string.desc_seventh,
+            R.string.desc_eighth
+    };
+
+    public ViewPagerAdapter(Context context){
+
+        this.context = context;
+
+    }
+
+    @Override
+    public int getCount() {
+        return  headings.length;
+    }
+
+    @Override
+    public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
+        return view == (LinearLayout) object;
+    }
+
+    @NonNull
+    @Override
+    public Object instantiateItem(@NonNull ViewGroup container, int position) {
+
+        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        View view = layoutInflater.inflate(R.layout.slider,container,false);
+
+        ImageView slidetitleimage = (ImageView) view.findViewById(R.id.titleImage);
+        TextView slideHeading = (TextView) view.findViewById(R.id.texttitle);
+        TextView slideDesciption = (TextView) view.findViewById(R.id.textdeccription);
+
+        slidetitleimage.setImageResource(images[position]);
+        slideHeading.setText(headings[position]);
+        slideDesciption.setText(description[position]);
+
+        container.addView(view);
+
+        return view;
+
+    }
+
+    @Override
+    public void destroyItem(@NonNull ViewGroup container, int position, @NonNull Object object) {
+
+        container.removeView((LinearLayout)object);
+
+    }
+}
